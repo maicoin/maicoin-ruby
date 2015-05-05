@@ -1,0 +1,5 @@
+require "json"
+require "money"
+require "maicoin/version"
+require "maicoin/client"
+require "maicoin/oauth_client"

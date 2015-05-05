@@ -42,3 +42,9 @@ vendor/ruby/
 .rvmrc
 *.swo
 
+# Others
+Gemfile*
+Rakefile
+.ruby-version
+.editorconfig
+
