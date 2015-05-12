@@ -38,4 +38,5 @@ puts trans
 puts client.cancel_request_btc(trans['transaction']['id'])
 puts client.send_transaction('yute@maicoin.com', 0.001, 'btc', pin)
 puts client.send_transaction('1FTv5Ymfq1uT9N9ZrmYRgpKw69U6grnm64', 0.0011, 'btc', pin)
+puts client.approve_requested_transaction('539e92b8520f0e9d2a9cadfbec28c1a7aeecb44f5f31a36b', pin)
 

@@ -136,6 +136,11 @@ module MaiCoin
       delete "/transactions/#{txid}"
     end
 
+    def approve_requested_transaction(txid, account_pin, options={})
+      options.merge!({account_pin: account_pin})
+      put "/transactions/#{txid}/approve", options
+    end
+
     ### Checkouts
     def create_checkout(options = {})
       post '/checkouts', options
